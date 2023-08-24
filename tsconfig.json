@@ -6,7 +6,7 @@
     "target": "ES5",
     "useDefineForClassFields": true,
     "lib": ["dom", "dom.iterable"],
-    "module": "ESNext",
+    "module": "ES2020",
     "skipLibCheck": true,
     "allowJs": true,
     "moduleResolution": "node",
@@ -21,5 +21,4 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }
