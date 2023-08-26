@@ -6,6 +6,8 @@ import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
+import SponsorAdidas from "@/assets/SponsorAdidas.svg";
+import SponsorNike from "@/assets/SponsorNike.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -85,6 +87,8 @@ const Home = ({ setSelectedPage }: Props) => {
               <img src={SponsorForbes} alt="Лого форбса" />
               <img src={SponsorRedBull} alt="Лого редбула" />
               <img src={SponsorFortune} alt="Лого фортуны" />
+              <img src={SponsorAdidas} alt="Лого адидаса" className=" h-16" />
+              <img src={SponsorNike} alt="Лого найка" className=" h-16" />
             </div>
           </div>
         </div>
