@@ -18,7 +18,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1050px)");
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="главная" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* image and main header */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -63,14 +63,14 @@ const Home = ({ setSelectedPage }: Props) => {
             className="mt-8 flex items-center gap-8 "
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join now
+              Присоединись
             </ActionButton>
             <AnchorLink
               className="test-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
-              <p>Learn More</p>
+              <p>Узнать больше</p>
             </AnchorLink>
           </motion.div>
         </div>

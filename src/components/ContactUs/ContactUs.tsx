@@ -26,7 +26,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pb-32 pt-24">
+    <section id="контакты" className="mx-auto w-5/6 pb-32 pt-24">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
@@ -43,7 +43,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">ПРИСОЕДИНИСЬ</span> ЧТОБЫ БЫТЬ В
+            ФОРМЕ
           </HText>
           <p className="my-5">
             Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
@@ -74,7 +75,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
+                placeholder="Имя"
                 {...register("name", {
                   required: true,
                   maxLength: 100,
@@ -91,7 +92,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="EMAIL"
+                placeholder="Почта"
                 {...register("email", {
                   required: true,
                   pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -107,7 +108,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <textarea
                 className={inputStyles}
-                placeholder="MESSAGE"
+                placeholder="Сообщение"
                 rows={4}
                 cols={50}
                 {...register("message", {
@@ -128,7 +129,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
-                SUBMIT
+                Отправить
               </button>
             </form>
           </motion.div>

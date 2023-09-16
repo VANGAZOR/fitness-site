@@ -14,19 +14,19 @@ import Benefit from "./Benefit";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    title: "Современные удобства",
     description:
       "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
+    title: "Сотни разнообразных тренажеров",
     description:
       "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    title: "Профессиональные тренера",
     description:
       "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
   },
@@ -40,12 +40,12 @@ const container = {
 };
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void,
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="преимущества" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -60,11 +60,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST GYM.</HText>
+          <HText>БОЛЬШЕ ЧЕМ ПРОСТО ЗАЛ</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            Мы предоставляем фитнес-оборудование мирового класса, а также
+            профессиональных тренеров, которые помогут вам с легкостью достичь
+            все ваши цели в фитнесе.
           </p>
         </motion.div>
         <motion.div
@@ -106,7 +106,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                    МИЛЛИОНЫ ДОВОЛЬНЫХ КЛИЕНТОВ{" "}
                     <span className="text-primary-500">FIT</span>
                   </HText>
                 </motion.div>
@@ -140,7 +140,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Присоединись
                 </ActionButton>
               </div>
             </div>
